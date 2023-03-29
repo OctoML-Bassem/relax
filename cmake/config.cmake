@@ -46,7 +46,7 @@
 # - ON: enable CUDA with cmake's auto search
 # - OFF: disable CUDA
 # - /path/to/cuda: use specific path to cuda toolkit
-set(USE_CUDA OFF)
+set(USE_CUDA ON)
 
 # Whether enable ROCM runtime
 #
@@ -142,7 +142,7 @@ set(USE_MICRO_STANDALONE_RUNTIME OFF)
 # - OFF: disable llvm, note this will disable CPU codegen
 #        which is needed for most cases
 # - /path/to/llvm-config: enable specific LLVM when multiple llvm-dev is available.
-set(USE_LLVM OFF)
+set(USE_LLVM ON)
 
 #---------------------------------------------
 # Contrib libraries
@@ -416,7 +416,7 @@ set(USE_GTEST AUTO)
 
 # Enable using CUTLASS as a BYOC backend
 # Need to have USE_CUDA=ON
-set(USE_CUTLASS OFF)
+set(USE_CUTLASS ON)
 
 # Enable to show a summary of TVM options
 set(SUMMARIZE OFF)
@@ -431,3 +431,4 @@ set(USE_UMA OFF)
 
 # Set custom Alloc Alignment for device allocated memory ndarray points to
 set(USE_KALLOC_ALIGNMENT 64)
+set(CMAKE_CUDA_ARCHITECTURES 70)

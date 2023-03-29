@@ -356,6 +356,7 @@ TVM_REGISTER_CUDA_TAG("nvidia/jetson-nano", "sm_53", 49152, 32768);
 TVM_REGISTER_CUDA_TAG("nvidia/jetson-tx2", "sm_62", 49152, 32768);
 TVM_REGISTER_CUDA_TAG("nvidia/jetson-tx1", "sm_53", 49152, 32768);
 TVM_REGISTER_CUDA_TAG("nvidia/tegra-x1", "sm_53", 49152, 32768);
+TVM_REGISTER_CUDA_TAG("nvidia/tesla-v100-sxm2-16gb", "sm_70", 49152, 65536);
 
 #undef TVM_REGISTER_CUDA_TAG
 

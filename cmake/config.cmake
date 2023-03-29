@@ -306,7 +306,7 @@ set(USE_VTA_TSIM OFF)
 set(USE_VTA_FPGA OFF)
 
 # Whether use Thrust
-set(USE_THRUST OFF)
+set(USE_THRUST ON)
 
 # Whether use cuRAND
 set(USE_CURAND OFF)
@@ -431,4 +431,5 @@ set(USE_UMA OFF)
 
 # Set custom Alloc Alignment for device allocated memory ndarray points to
 set(USE_KALLOC_ALIGNMENT 64)
-set(CMAKE_CUDA_ARCHITECTURES 70)
+# set(CMAKE_CUDA_ARCHITECTURES 70)
+set(CMAKE_CUDA_ARCHITECTURES 80)
